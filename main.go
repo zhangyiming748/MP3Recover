@@ -9,7 +9,7 @@ import (
 func main() {
 	root := os.Getenv("root")
 	if root == "" {
-		root = "/home/zen/ugreen/alist/music/audio/李圣杰"
+		root = "/home/zen/ugreen/alist/music/audio"
 	}
 	util.SetLog(root)
 	files := util.GetFiles(root)
