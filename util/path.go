@@ -9,7 +9,7 @@ import (
 	"github.com/h2non/filetype"
 )
 
-func GetFiles(root string) *[]string {
+func GetFiles(root string) []string {
 	var filePaths []string
 	//root := "/path/to/your/directory" // 请将此路径替换为你需要遍历的目录
 	err := filepath.WalkDir(root, func(path string, entry fs.DirEntry, err error) error {
@@ -46,5 +46,5 @@ func GetFiles(root string) *[]string {
 	for _, filePath := range filePaths {
 		fmt.Println(filePath)
 	}
-	return &filePaths
+	return filePaths
 }
