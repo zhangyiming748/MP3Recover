@@ -1,4 +1,4 @@
-# MP3Recover-
+# MP3Recover
 把所有音频文件恢复成原始MP3格式
 # 核心代码
 ```bash
