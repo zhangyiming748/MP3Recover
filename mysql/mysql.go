@@ -22,6 +22,8 @@ func SetMysql() {
 		useMysql = true
 		log.Printf("连接数据库成功:%v\n", engine)
 	}
+
+	GetMysql().Sync2(File{})
 }
 
 func GetMysql() *xorm.Engine {

@@ -14,10 +14,6 @@ type File struct {
 	DeletedAt time.Time `xorm:"deleted"`
 }
 
-func init() {
-	GetMysql().Sync2(File{})
-}
-
 /*
 下载成功后插入
 */
