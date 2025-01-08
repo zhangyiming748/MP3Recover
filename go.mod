@@ -19,5 +19,6 @@ require (
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect
+	github.com/zhangyiming748/lumberjack v0.0.1
 	xorm.io/xorm v1.3.9
 )

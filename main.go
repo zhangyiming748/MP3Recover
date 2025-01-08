@@ -11,6 +11,7 @@ func main() {
 	if root == "" {
 		root = "/home/zen/ugreen/alist/music/audio/李圣杰"
 	}
+	util.SetLog(root)
 	files := util.GetFiles(root)
 	for i := range files {
 		conv.Mp3(files[i])
