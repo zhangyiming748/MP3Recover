@@ -3,6 +3,7 @@ package util
 import (
 	"fmt"
 	"io/fs"
+	"log"
 	"os"
 	"path/filepath"
 
@@ -10,6 +11,7 @@ import (
 )
 
 func GetFiles(root string) []string {
+	log.Println("开始查找文件")
 	var filePaths []string
 	//root := "/path/to/your/directory" // 请将此路径替换为你需要遍历的目录
 	err := filepath.WalkDir(root, func(path string, entry fs.DirEntry, err error) error {
